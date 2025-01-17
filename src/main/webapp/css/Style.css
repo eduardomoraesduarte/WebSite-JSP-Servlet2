@@ -1,0 +1,247 @@
+@charset "ISO-8859-1";
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+	;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.cssNav {
+	width: 100vw;
+}
+
+/* Estilo geral para a barra de navegação */
+nav.cssNav {
+    background-color: black; /* Cor de fundo da barra */
+    height: 50px; /* Altura da barra */
+    display: flex;
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Remove os marcadores da lista */
+nav.cssNav ul {
+    list-style: none;
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove preenchimentos internos */
+    display: flex; /* Alinha os itens em linha */
+}
+
+/* Estilo para os itens da lista */
+nav.cssNav ul li {
+    margin: 0 15px; /* Define o espaçamento entre os itens */
+}
+
+/* Estilo para os links */
+nav.cssNav ul li a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 5px 10px; /* Espaçamento interno para aumentar a área clicável */
+    transition: color 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+/* Cor de destaque ao passar o mouse */
+nav.cssNav ul li a:hover {
+    color: #FDFD96;
+}
+
+/* Destaca o link ativo */
+nav.cssNav ul li a.active {
+    font-weight: bold; /* Destaca o link ativo */
+}
+
+
+/* Estilização da barra de navegação */
+ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    margin: 0; /* Remove a margem padrão da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    display: flex; /* Alinha os itens em linha */
+    justify-content: center; /* Centraliza os itens na barra */
+    background-color: gray; /* Define a cor da barra */
+    height: 50px; /* Altura da barra */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+/* Estilo para os itens da lista */
+ul li {
+    margin: 0 10px; /* Ajuste o espaçamento horizontal entre os itens */
+}
+
+/* Estilo para os links */
+ul li a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 5px 10px; /* Ajusta o espaço interno dos links */
+    display: inline-block; /* Garante que o padding seja aplicado corretamente */
+}
+
+
+input {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    border-radius: 5px;
+}
+
+
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type="text"], .campo select {
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+    padding-right: 1em;
+}
+.cMain {
+	background-image: url("/BananaBacana/img/banana.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+}
+
+.cssNav ul {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+	width: 100%;
+	justify-content: space-evenly ;
+	padding: 20px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+
+.cssForm {
+	display: flex;
+	flex-direction: column;
+	padding: 45px;
+	width: 800px;
+	height: 400px;
+	background-color: white;
+	margin: 0 auto;
+	margin-top: 4px;
+	border-radius: 15px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+	width: 800px;
+	align-items: space-between;
+	align-self: space-between;
+}
+
+.cssForm input {
+	border-radius: 8px;
+	border: 1px solid gray;
+	width: 80px;
+	padding: 10px;
+	width: 400px;
+	background-color: #FFFFFF;
+}
+
+.cssForm div {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 30px;
+	gap: 15px;
+}
+
+
+
+.campo input[type="text"] {
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.campo input {
+    flex: 30; /* Faz os inputs ocuparem o restante do espaço */
+    
+    padding: 5px; /* Adiciona espaçamento interno */
+   
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+    padding-right: 1em;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.campo input:focus{
+    background: #E0E0F8;
+}
+
+
+
+/* Elemento de classe "botao" */
+.botao {
+    font-size: 1.2em;
+    background: gray;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    background: #FDFD96;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+    cursor: pointer;
+}
+
+#check{
+    display: inline-block;
+}
+
+/* Alinhamento do checkbox e do label */
+.campo-checkbox {
+    display: flex; /* Coloca o label e o checkbox na mesma linha */
+    align-items: center; /* Alinha verticalmente */
+    margin-top: 10px; /* Espaçamento superior (opcional) */
+}
+
+.campo-checkbox label {
+    margin-right: 10px; /* Espaçamento entre o label e o checkbox */
+    font-weight: bold; /* Mantém o estilo consistente com os outros labels */
+}
+
+.campo-checkbox input[type="checkbox"] {
+    width: 20px; /* Ajusta o tamanho do checkbox */
+    height: 20px; /* Ajusta o tamanho do checkbox */
+}
+
+
+#cssButton {
+	background-color: gray;
+	border: none;
+	margin-bottom: 1em;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
